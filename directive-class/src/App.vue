@@ -26,7 +26,7 @@ const computedStyles = computed((): { textColorRed: boolean; bgColorBlue: boolea
 </script>
 
 <template>
-  <p v-bind:class="{ isTextColorRed: true, isBgColorBlue: true }">{{ msg }}</p>
+  <p v-bind:class="{ textColorRed: true, bgColorBlue: true }">{{ msg }}</p>
   <p v-bind:class="{ isTextColorRed: isTextColorRed, isBgColorBlue: isBgColorBlue }">{{ msg }}</p>
   <p v-bind:class="{ textColorPink: true }">{{ msg }}</p>
   <p v-bind:class="{ 'text-color-pink': true }">{{ msg }}</p>
